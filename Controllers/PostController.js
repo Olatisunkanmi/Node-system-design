@@ -84,25 +84,10 @@ exports.LikePost = (req, res) => {
 exports.sortPost = (req, res) => {
 	const id = req.params.id * 1;
 	let smallest = dummyData[0].likes;
-	let smallest_index = 0;
-	let sortedArray = [];
-	const findSmallestLikes = (arr) => {
-		for (let i = 0; i < arr.length; i++) {
-			if (arr[i].likes < smallest) {
-				smallest = arr[i].likes;
-				smallest_index = i;
-			}
-			return smallest_index;
-		}
-	};
+	dummyData.sort((a, b) => b.likes - a.likes);
 
-	const sortArr = (arr) => {
-		for (let i = 0; i < arr.length; i++) {
-			smallest = findSmallestLikes(dummyData);
-			sortedArray.splice(arr.pop, smallest);
-		}
-		return sortedArray;
-	};
-
-	console.log(sortArr(dummyData));
+	res.status(200).json({
+		status: 'Review Added',
+		data: dummyData,
+	});
 };
