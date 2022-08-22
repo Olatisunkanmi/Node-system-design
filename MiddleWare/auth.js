@@ -26,10 +26,10 @@ exports.checkBody = (req, res, next) => {
 	}
 	next();
 };
+
 exports.checkUserUpdate = (req, res, next) => {
 	const { id } = req.params;
 	const { name } = req.body;
-	console.log(id, name);
 	if (!name || !id) {
 		return res.status(500).json({
 			status: 'Failed',
