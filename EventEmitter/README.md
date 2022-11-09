@@ -32,3 +32,5 @@ release the listener with the removeListener() method of the EventEmitter:
 ```
 emitter.removeListener('an_event', listener)
 ```
+
+_We can use the convenience method once(event, listener) in place of on(event, listener) to automatically unregister a listener after the event is received for the first time. However, be advised that if the event we specify is never emitted, then the listener is never released, causing a memory leak._
