@@ -17,8 +17,8 @@ I have chosen ![Node Js system design](https://www.nodejsdesignpatterns.com/) to
 
 <!--  My Notes.  -->
 
--[x] ![Notion](https://tin-cafe-f64.notion.site/Node-System-Design-587ba86412db478f8c02389242e0b86f)
+-[x] ![ Personal Notes ](https://tin-cafe-f64.notion.site/Node-System-Design-587ba86412db478f8c02389242e0b86f)
 
 ## Acknowledgments
 
--[x] [![Mario Casciaro and Luciano Mammino]](https://www.nodejsdesignpatterns.com/)
+-[x] ![Mario Casciaro and Luciano Mammino](https://www.nodejsdesignpatterns.com/)
