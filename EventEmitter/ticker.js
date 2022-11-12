@@ -17,9 +17,10 @@ const ticker = (cb, number) => {
 			'tick',
 			setTimeout(function boo() {
 				console.log('Event');
+				count++;
+				if (count > number) return cb;
 
 				setTimeout(boo, 1000);
-				count++;
 			}, 1000),
 		);
 	}
